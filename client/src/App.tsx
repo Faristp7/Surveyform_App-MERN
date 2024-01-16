@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import AdminLogin from "./components/Login/AdminLogin";
 
 function App() {
-  
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const [count,setcount] = useState<any>(0)
-
   return (
-   <div className='text-4xl' onClick={()=>setcount(count +1)}>
-    {count}
-   </div>
-  )
+    <div>
+      <AdminLogin />
+    </div>
+  );
 }
 
-export default App
+export default App;
